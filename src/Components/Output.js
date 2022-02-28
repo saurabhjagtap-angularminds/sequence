@@ -34,15 +34,15 @@ function Output({data}) {
          // setallcount(array)
           
   return (
-    <div>  <div class="col-auto">
-    <div class="card">
-        <div class="card-body" id="eight_circle">
-            <div class="row py-4">
+    <div>  <div className="col-auto">
+    <div className="card">
+        <div className="card-body" id="eight_circle">
+            <div className="row py-4">
             
             {array && array.map((topi,i) => { return  data.option==="Circle" ?(
-                <div class="col-auto mb-3">
+                <div className="col-auto mb-3" key={i}>
                    
-                    <h4 class="border border-info px-4 py-3 m-auto rounded rounded-circle">
+                    <h4 className="border border-info px-4 py-3 m-auto rounded rounded-circle">
                         
       <span key={i} value={topi._id}>{topi}</span>
     
@@ -51,8 +51,8 @@ function Output({data}) {
                     </h4>
                 </div>
             ) :(
-                 <div class="col-auto mb-3">
-                    <h4 class="border border-info px-4 py-3 m-auto rounded">
+                 <div className="col-auto mb-3" key={i}>
+                    <h4 className="border border-info px-4 py-3 m-auto rounded">
                         <span key={i} >{topi}</span>
                     </h4>
                 </div> )})}

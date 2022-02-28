@@ -35,9 +35,9 @@ function Home() {
         </div>
     </nav> */}
     <Nav></Nav>
-    <div class="container my-5">
+    <div className="container my-5">
        <Input setInput={setInput}/>
-        <div class="row justify-content-center">
+        <div className="row justify-content-center">
           <Output data={input}/>
         </div>
     </div>

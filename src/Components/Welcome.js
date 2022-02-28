@@ -38,12 +38,12 @@ function Welcome() {
       }
     return (
       
-      <div> <div class="container my-5 text-center">
+      <div> <div className="container my-5 text-center">
       
-      <h2 class="text-center">Hello and welcome,</h2>
-      <input type="text" placeholder="Please enter your name" class="form-control form-control-lg w-50 mx-auto mt-5"  onChange={e =>setname(e.target.value)}/>
-      <div class="my-5">
-          <a href="generate.html" class="btn btn-primary btn-lg" onClick={handleClick} >Continue</a>
+      <h2 className="text-center">Hello and welcome,</h2>
+      <input type="text" placeholder="Please enter your name" className="form-control form-control-lg w-50 mx-auto mt-5"  onChange={e =>setname(e.target.value)}/>
+      <div className="my-5">
+          <a href="generate.html" className="btn btn-primary btn-lg" onClick={handleClick} >Continue</a>
       </div>
   </div></div>
     )

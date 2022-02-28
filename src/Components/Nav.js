@@ -18,10 +18,10 @@ function Nav() {
       },[]);
   return (
     <div>
-         <nav class="navbar navbar-dark bg-dark">
+         <nav className="navbar navbar-dark bg-dark">
          
-        <div class="container-fluid">
-            <span class="navbar-brand ">
+        <div className="container-fluid">
+            <span className="navbar-brand ">
                 Hello  {localname}
             </span>
         </div>
