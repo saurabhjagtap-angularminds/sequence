@@ -32,14 +32,14 @@ function Output({data}) {
           console.log("array",array)
         
          // setallcount(array)
-       
+          
   return (
     <div>  <div class="col-auto">
     <div class="card">
         <div class="card-body" id="eight_circle">
             <div class="row py-4">
             
-            {array && array.map((topi,i) => { return data.option==="Circle" ?(
+            {array && array.map((topi,i) => { return  data.option==="Circle" ?(
                 <div class="col-auto mb-3">
                    
                     <h4 class="border border-info px-4 py-3 m-auto rounded rounded-circle">

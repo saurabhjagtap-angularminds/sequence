@@ -17,6 +17,7 @@ function Home() {
         let currname=localStorage.getItem('name');
         if(currname){
         setlocalname(currname)
+        Navigate("/Home")
         }
         else{
             Navigate("/")

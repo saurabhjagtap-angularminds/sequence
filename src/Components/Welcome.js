@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { useNavigate, useLocation } from "react-router-dom";
 //import { useNavigate, useLocation } from "react-router-dom";
 function Welcome() {
@@ -14,6 +14,14 @@ function Welcome() {
     //   alert(JSON.stringify(name));
     //   setname(event.target.value)
     // };
+    useEffect(() => {
+      let currname=localStorage.getItem('name');
+        if(currname){
+       Navigate("/Home", { state: { name } })
+        
+        }
+  
+    });
     function handleClick(e) {
         e.preventDefault();
         console.log('The link was clicked.');
